@@ -4,17 +4,17 @@ $query->setQueryId("getModulePartConfig");
 $query->setAction("select");
 $query->setPriority("");
 
-${'module199_argument'} = new ConditionArgument('module', $args->module, 'equal');
-${'module199_argument'}->checkNotNull();
-${'module199_argument'}->createConditionValue();
-if(!${'module199_argument'}->isValid()) return ${'module199_argument'}->getErrorMessage();
-if(${'module199_argument'} !== null) ${'module199_argument'}->setColumnType('varchar');
+${'module10_argument'} = new ConditionArgument('module', $args->module, 'equal');
+${'module10_argument'}->checkNotNull();
+${'module10_argument'}->createConditionValue();
+if(!${'module10_argument'}->isValid()) return ${'module10_argument'}->getErrorMessage();
+if(${'module10_argument'} !== null) ${'module10_argument'}->setColumnType('varchar');
 
-${'module_srl200_argument'} = new ConditionArgument('module_srl', $args->module_srl, 'equal');
-${'module_srl200_argument'}->checkNotNull();
-${'module_srl200_argument'}->createConditionValue();
-if(!${'module_srl200_argument'}->isValid()) return ${'module_srl200_argument'}->getErrorMessage();
-if(${'module_srl200_argument'} !== null) ${'module_srl200_argument'}->setColumnType('number');
+${'module_srl11_argument'} = new ConditionArgument('module_srl', $args->module_srl, 'equal');
+${'module_srl11_argument'}->checkNotNull();
+${'module_srl11_argument'}->createConditionValue();
+if(!${'module_srl11_argument'}->isValid()) return ${'module_srl11_argument'}->getErrorMessage();
+if(${'module_srl11_argument'} !== null) ${'module_srl11_argument'}->setColumnType('number');
 
 $query->setColumns(array(
 new SelectExpression('`config`')
@@ -24,8 +24,8 @@ new Table('`xe_module_part_config`', '`module_part_config`')
 ));
 $query->setConditions(array(
 new ConditionGroup(array(
-new ConditionWithArgument('`module`',$module199_argument,"equal")
-,new ConditionWithArgument('`module_srl`',$module_srl200_argument,"equal", 'and')))
+new ConditionWithArgument('`module`',$module10_argument,"equal")
+,new ConditionWithArgument('`module_srl`',$module_srl11_argument,"equal", 'and')))
 ));
 $query->setGroups(array());
 $query->setOrder(array());

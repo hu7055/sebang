@@ -71,9 +71,6 @@ $lang->edit->fontlist['timesNewRoman']='\'Times New Roman\', Times, serif';
 $lang->edit->fontlist['serif']='Serif';
 $lang->edit->fontlist['courierNew']='\'Courier New\', Courier, monospace';
 $lang->edit->fontlist['lucidaConsole']='\'Lucida Console\', Monaco, monospace';
-$lang->edit->fontlist['meiryo']='\'メイリオ\', \'Meiryo\', Arial, Helvetica, sans-serif';
-$lang->edit->fontlist['hiragino']='\'ヒラギノ角ゴ Pro\', \'Hiragino Kaku Gothic Pro\', Arial, Helvetica, sans-serif';
-$lang->edit->fontlist['ms_pgothic']='\'ＭＳ Ｐゴシック\', \'MS PGothic\', Arial, Helvetica, sans-serif';
 $lang->edit->header='형식';
 if(!is_array($lang->edit->header_list)){
 	$lang->edit->header_list = array();

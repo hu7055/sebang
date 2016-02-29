@@ -1,0 +1,10 @@
+Simple installation Instruction 
+
+please install following tools for local development
+
+1. required PHP version For XE
+PHP 5.6.18 (cli) (built: Feb  3 2016 17:20:21)
+
+2. apache 2.4.18 Windows version
+
+3. mysql
