@@ -4,12 +4,12 @@ $query->setQueryId("getExceptModule");
 $query->setAction("select");
 $query->setPriority("");
 
-${'module_srl244_argument'} = new ConditionArgument('module_srl', $args->module_srl, 'equal');
-${'module_srl244_argument'}->checkFilter('number');
-${'module_srl244_argument'}->checkNotNull();
-${'module_srl244_argument'}->createConditionValue();
-if(!${'module_srl244_argument'}->isValid()) return ${'module_srl244_argument'}->getErrorMessage();
-if(${'module_srl244_argument'} !== null) ${'module_srl244_argument'}->setColumnType('number');
+${'module_srl37_argument'} = new ConditionArgument('module_srl', $args->module_srl, 'equal');
+${'module_srl37_argument'}->checkFilter('number');
+${'module_srl37_argument'}->checkNotNull();
+${'module_srl37_argument'}->createConditionValue();
+if(!${'module_srl37_argument'}->isValid()) return ${'module_srl37_argument'}->getErrorMessage();
+if(${'module_srl37_argument'} !== null) ${'module_srl37_argument'}->setColumnType('number');
 
 $query->setColumns(array(
 new SelectExpression('count(*)', '`count`')
@@ -19,7 +19,7 @@ new Table('`xe_syndication_except_modules`', '`syndication_except_modules`')
 ));
 $query->setConditions(array(
 new ConditionGroup(array(
-new ConditionWithArgument('`module_srl`',$module_srl244_argument,"equal")))
+new ConditionWithArgument('`module_srl`',$module_srl37_argument,"equal")))
 ));
 $query->setGroups(array());
 $query->setOrder(array());

@@ -4,12 +4,12 @@ $query->setQueryId("getGrantedModule");
 $query->setAction("select");
 $query->setPriority("");
 
-${'module_srl245_argument'} = new ConditionArgument('module_srl', $args->module_srl, 'equal');
-${'module_srl245_argument'}->checkFilter('number');
-${'module_srl245_argument'}->checkNotNull();
-${'module_srl245_argument'}->createConditionValue();
-if(!${'module_srl245_argument'}->isValid()) return ${'module_srl245_argument'}->getErrorMessage();
-if(${'module_srl245_argument'} !== null) ${'module_srl245_argument'}->setColumnType('number');
+${'module_srl38_argument'} = new ConditionArgument('module_srl', $args->module_srl, 'equal');
+${'module_srl38_argument'}->checkFilter('number');
+${'module_srl38_argument'}->checkNotNull();
+${'module_srl38_argument'}->createConditionValue();
+if(!${'module_srl38_argument'}->isValid()) return ${'module_srl38_argument'}->getErrorMessage();
+if(${'module_srl38_argument'} !== null) ${'module_srl38_argument'}->setColumnType('number');
 
 $query->setColumns(array(
 new SelectExpression('count(*)', '`count`')
@@ -19,7 +19,7 @@ new Table('`xe_module_grants`', '`module_grants`')
 ));
 $query->setConditions(array(
 new ConditionGroup(array(
-new ConditionWithArgument('`module_srl`',$module_srl245_argument,"equal")
+new ConditionWithArgument('`module_srl`',$module_srl38_argument,"equal")
 ,new ConditionWithoutArgument('`name`',"'access','view','list'","in", 'and')))
 ,new ConditionGroup(array(
 new ConditionWithoutArgument('`group_srl`','1',"more")
